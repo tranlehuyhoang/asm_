@@ -321,10 +321,11 @@ header {
     padding         : 30px;
     font-weight     : 900;
     display         : flex;
+    font-size: 40px;
 }
 
 header>div:nth-child(2) {
-    font-size  : 30px;
+    font-size  : 20px;
     font-weight: 900;
 
     display        : flex;
@@ -335,7 +336,7 @@ header>div:nth-child(2) {
 header>div:nth-child(2)>a {
     color          : aliceblue;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 20px;
 }
 
 footer {

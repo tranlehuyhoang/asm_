@@ -2,6 +2,9 @@
     header>div:nth-child(2) {
         display: none;
     }
+    footer>div:nth-child(1) {
+        display:  none;
+    }
     #section1 {
         display              : grid;
         grid-template-columns: repeat(1, 1fr);
