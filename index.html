@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tablet.css">
+    <link rel="stylesheet" href="./mobie.css">
+</head>
+
+<body style="margin: 0 auto; width: 100%;">
+    <header>
+        <div style="font-size: 50px;">SHOP_PS26819</div>
+        <div>
+            <a href="#home" class="scroll-link">HOME</a>
+            <a href="#shop" class="scroll-link">SHOP</a>
+            <a href="#pages" class="scroll-link">PAGES</a>
+            <a href="#blog" class="scroll-link">BLOG</a>
+            <a href="#contact" class="scroll-link">CONTACT</a>
+        </div>
+    </header>
+    <div style="max-width: 1500px; margin: 0 auto;  margin-top: 50px;">
+        <h1 id="home">HOME</h1>
+        <section id="section1">
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <h1 id="pages">PAGES</h1>
+        <section id="section2">
+            <div></div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+        <h1 id="blog">BLOG</h1>
+        <section id="section3">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <h1 id="contact">CONTACT</h1>
+        <section id="section4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <h1 id="shop">SHOP</h1>
+        <section id="section6">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </div>
+    <footer>
+        <div style="font-size: 50px;">SHOP_PS26819</div>
+        <div>assignment</div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+
+    $(document).ready(() => {
+        // Thêm độ trễ khi bấm vào liên kết chuyển đến
+        $('a.scroll-link').click((event) => {
+            event.preventDefault();
+            const target = $(event.target).attr('href');
+            const offset = $(target).offset().top - 50; // Độ trễ (50px trong ví dụ này)
+            $('html, body').animate({
+                scrollTop: offset
+            }, 500); // Thời gian di chuyển (500ms trong ví dụ này)
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,371 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+    width     : 100%;
+
+
+}
+
+body {
+    scroll-behavior: smooth;
+
+}
+
+section>div {
+    border-radius: 10px;
+
+    border: 1px solid black;
+
+}
+
+#section1 {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    height               : 500px;
+    margin               : 50px 0;
+
+}
+
+#section1>div:nth-child(1) {
+
+    background-image   : url(https://themewagon.github.io/multishop/img/product-7.jpg);
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+
+}
+
+#section1>div:nth-child(2) {
+    background-image   : url(https://themewagon.github.io/multishop/img/product-5.jpg);
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+}
+
+#section1>div:nth-child(3) {
+    background-image: url(https://themewagon.github.io/multishop/img/product-6.jpg);
+
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+}
+
+#section2 {
+    display              : grid;
+    grid-template-columns: 3fr 1fr;
+    height               : 500px;
+    margin               : 50px 0;
+    gap                  : 20px;
+
+
+}
+
+#section2>div:nth-child(2) {
+    border               : 0;
+    display              : grid;
+    gap                  : 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows   : repeat(2, 1fr);
+}
+
+#section2>div:nth-child(2)>div {
+    border-radius: 10px;
+
+    border: 1px solid black;
+}
+
+#section2>div:nth-child(1) {
+    background-image   : url(https://themewagon.github.io/multishop/img/carousel-2.jpg);
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+
+}
+
+#section2>div:nth-child(2) {}
+
+#section2>div:nth-child(2)>div:nth-child(1) {
+    background-image   : url(https://themewagon.github.io/multishop/img/offer-1.jpg);
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+}
+
+#section2>div:nth-child(2)>div:nth-child(2) {
+    background-image   : url(https://themewagon.github.io/multishop/img/offer-2.jpg);
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+}
+
+#section2>div:nth-child(3) {
+    background-color: aqua;
+}
+
+#section3 {
+    gap                  : 10px;
+    display              : grid;
+    height               : 500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows   : repeat(2, 1fr);
+    margin               : 50px 0;
+
+
+}
+
+#section3 div:nth-child(1) {
+    background-image   : url(https://themewagon.github.io/multishop/img/product-1.jpg);
+    background-repeat  : no-repeat;
+    background-size    : 248px;
+    background-position: center;
+}
+
+#section3 div:nth-child(2) {
+    background-image   : url(https://themewagon.github.io/multishop/img/product-2.jpg);
+    background-repeat  : no-repeat;
+    background-size    : 248px;
+    background-position: center;
+}
+
+#section3 div:nth-child(3) {
+    background-image   : url(https://themewagon.github.io/multishop/img/product-3.jpg);
+    background-repeat  : no-repeat;
+    background-size    : 248px;
+    background-position: center;
+
+}
+
+#section3 div:nth-child(4) {
+    background-image   : url(https://themewagon.github.io/multishop/img/product-4.jpg);
+    background-repeat  : no-repeat;
+    background-size    : 248px;
+    background-position: center;
+}
+
+#section3 div:nth-child(5) {
+    background-image   : url(https://themewagon.github.io/multishop/img/product-5.jpg);
+    background-repeat  : no-repeat;
+    background-size    : 248px;
+    background-position: center;
+}
+
+#section3 div:nth-child(6) {
+    background-image   : url(https://themewagon.github.io/multishop/img/product-6.jpg);
+    background-repeat  : no-repeat;
+    background-size    : 248px;
+    background-position: center;
+}
+
+#section4 {
+    display              : grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows   : 2fr 1fr;
+    gap                  : 10px;
+    height               : 800px;
+    margin               : 50px 0;
+    grid-template-areas  :
+        "div1 div1 div1 div1 div1 div1"
+        "div2 div2 div3 div3 div4 div4";
+}
+
+#section4 div:nth-child(1) {
+    grid-area          : div1;
+    background-image   : url(https://themewagon.github.io/coloshop/images/slider_1.jpg);
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+}
+
+
+
+#section4 div:nth-child(2) {
+    background-image   : url(https://themewagon.github.io/coloshop/images/banner_3.jpg);
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+    grid-area          : div2;
+}
+
+#section4 div:nth-child(3) {
+    background-image   : url(https://themewagon.github.io/coloshop/images/banner_2.jpg);
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+    grid-area          : div3;
+}
+
+#section4 div:nth-child(4) {
+    background-image   : url(https://themewagon.github.io/coloshop/images/banner_1.jpg);
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+    grid-area          : div4;
+}
+
+#section5 {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows   : repeat(3, 1fr);
+    height               : 500px;
+    gap                  : 10px;
+    margin               : 50px 0;
+    grid-template-areas  :
+        "div1 div3 div5"
+        "div2 div3 div6 "
+        "div2 div4  div6  ";
+}
+
+#section5 div:nth-child(1) {
+    grid-area: div1;
+}
+
+#section5 div:nth-child(2) {
+    grid-area: div2;
+}
+
+#section5 div:nth-child(3) {
+    grid-area: div3;
+}
+
+#section5 div:nth-child(4) {
+    grid-area: div4;
+}
+
+#section5 div:nth-child(5) {
+    grid-area: div5;
+}
+
+#section5 div:nth-child(6) {
+    grid-area: div6;
+}
+
+#section6 {
+    display              : grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows   : repeat(3, 1fr);
+    height               : 500px;
+    margin               : 50px 0;
+    gap                  : 10px;
+    grid-template-areas  :
+        "div1 div1 div2 div2 div3"
+        "div1 div1 div2 div2 div4"
+        "div1 div1 div5 div6 div7";
+}
+
+#section6 div:nth-child(1) {
+    grid-area       : div1;
+    background-image: url(https://themewagon.github.io/coloshop/images/blog_1.jpg);
+
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+
+}
+
+#section6 div:nth-child(2) {
+    background-repeat: no-repeat;
+    background-size  : cover;
+    background-image : url(https://themewagon.github.io/coloshop/images/blog_3.jpg);
+
+    background-position: center;
+    grid-area          : div2;
+}
+
+#section6 div:nth-child(3) {
+    background-image   : url(https://themewagon.github.io/multishop/img/vendor-6.jpg);
+    background-repeat  : no-repeat;
+    background-size    : 150px;
+    background-position: center;
+    grid-area          : div3;
+}
+
+#section6 div:nth-child(4) {
+    background-image   : url(https://themewagon.github.io/multishop/img/vendor-2.jpg);
+    background-repeat  : no-repeat;
+    background-size    : 150px;
+    background-position: center;
+    grid-area          : div4;
+}
+
+#section6 div:nth-child(5) {
+    background-image   : url(https://themewagon.github.io/multishop/img/vendor-3.jpg);
+    background-repeat  : no-repeat;
+    background-size    : 150px;
+    background-position: center;
+    grid-area          : div5;
+}
+
+#section6 div:nth-child(6) {
+    background-image   : url(https://themewagon.github.io/multishop/img/vendor-4.jpg);
+    background-repeat  : no-repeat;
+    background-size    : 150px;
+    background-position: center;
+    grid-area          : div6;
+}
+
+#section6 div:nth-child(7) {
+    background-image   : url(https://themewagon.github.io/multishop/img/vendor-5.jpg);
+    background-repeat  : no-repeat;
+    background-size    : 150px;
+    background-position: center;
+    grid-area          : div7;
+}
+
+header {
+    color           : aliceblue;
+    background-color: gray;
+    padding         : 30px;
+    font-weight     : 900;
+    display         : flex;
+}
+
+header>div:nth-child(2) {
+    font-size  : 30px;
+    font-weight: 900;
+
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+header>div:nth-child(2)>a {
+    color          : aliceblue;
+    text-decoration: none;
+}
+
+footer {
+    justify-content : space-around;
+    color           : aliceblue;
+    background-color: gray;
+    padding         : 30px;
+    font-weight     : 900;
+    display         : flex;
+
+}
+
+footer>div:nth-child(2) {
+    font-size  : 50px;
+    font-weight: 900;
+    text-align : right;
+
+
+    align-items    : center;
+    justify-content: center;
+}
+
+#home {
+    scroll-margin-top: 500px;
+}
+#shop {
+    scroll-margin-top: 500px;
+}
+#pages {
+    scroll-margin-top: 500px;
+}
+#blog {
+    scroll-margin-top: 500px;
+}
+#contact {
+    scroll-margin-top: 500px;
+}

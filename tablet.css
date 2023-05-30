@@ -1,0 +1,74 @@
+@media (max-width: 768px) {
+    header>div:nth-child(2) {
+        display: none;
+    }
+    #section1 {
+        display              : grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows   : repeat(3, 1fr);
+        height               : 2000px;
+        margin-top: 0;
+        margin-bottom: 100px;
+
+    }
+
+    #section2 {
+        display              : grid;
+        grid-template-columns:   1fr;
+        grid-template-rows: repeat(2,1f);
+        height               : 800px;
+        margin-bottom: 0;
+        margin: 0;
+        gap                  : 20px;
+
+
+    }
+
+    #section2>div:nth-child(2) {
+        border               : 0;
+        display              : grid;
+        margin               : 0;
+        gap                  : 20px;
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #section3 {
+        gap                  : 10px;
+        display              : grid;
+        height               : 500px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows   : repeat(3, 1fr);
+      margin: 0;
+      margin-bottom: 100px;
+
+
+    }
+
+    #section4 {
+        display              : grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows   : 2fr 1fr;
+        gap                  : 10px;
+        height               : 800px;
+        margin               :   0;
+        margin-bottom: 100px;
+        grid-template-areas  :
+            "div1 div1 div1 div1 div1 div1"
+            "div2 div2 div3 div3 div4 div4";
+    }
+
+    #section6 {
+        display              : grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows   : repeat(3, 1fr);
+        height               : 500px;
+       margin: 0;
+        margin-bottom: 50px;
+        gap                  : 10px;
+        grid-template-areas  :
+            "div1 div1 div1 div2 div2"
+            "div1 div1 div1 div2 div2"
+            "div3 div4 div5 div6 div7";
+    }
+}
